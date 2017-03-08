@@ -7,6 +7,10 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
     req_content = request.get_json(silent=True)
+
+    if not req_content:
+        return jsonify({"color": "red", "message": "WHUAT!?", "notify": True, "message_format": "text"}), 404
+
     message = req_content['item']['message']['message'].lower()
     # mentions = req_content['item']['message']['mentions'].lower()
     if 'dataman' in message:
