@@ -16,5 +16,5 @@ def hello_world():
     return jsonify({"color": "red", "message": "Usage: /gerg (dataman|volkskaffee)", "notify": False,"message_format": "text"}),201
 
 
-if __name__ == '__main__':
-    app.run()
+#if __name__ == '__main__':
+#    app.run()
