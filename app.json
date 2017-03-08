@@ -1,0 +1,8 @@
+{
+  "name": "gergBOT",
+  "description": "An hipChat integration bot written in python",
+  "image": "heroku/python",
+  "repository": "https://github.com/gregvary/gerg-bot.git",
+  "keywords": ["python", "Flask" ],
+  "addons": []
+}
