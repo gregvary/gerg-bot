@@ -21,7 +21,10 @@ def hello_world():
         return jsonify({"color": "red", "message": "http://i.imgur.com/JEVTgfS.gifv", "notify": True, "message_format": "text"}),201
     if 'kebab' in message:
         return jsonify({"color": "red", "message": "https://i.imgur.com/gPCKNum.jpg", "notify": True, "message_format": "text"}),201
-    return jsonify({"color": "red", "message": "Usage: /gerg (dataman|volkskaffee|deal|kebab)", "notify": False,"message_format": "text"}),201
+    if 'vong' in message:
+        return jsonify({"color": "red", "message": "http://images.memes.com/meme/1143524", "notify": True, "message_format": "text"}),201
+    
+    return jsonify({"color": "red", "message": "Usage: /gerg (dataman|volkskaffee|deal|kebab|vong)", "notify": False,"message_format": "text"}),201
 
 
 #if __name__ == '__main__':
