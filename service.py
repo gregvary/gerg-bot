@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import random
 
 app = Flask(__name__)
-quotes = ['Ich behandel meinen Koerper wie einen Tempel', 'Gewoehn dich dran', 'Dein Handy ist schon laecherlich dreckig', 'Kein Mensch braucht PowerPoint', 'Mit so nem Stuhl wuerde ich bei Tipico auch nur Geld verlieren']
+quotes = ['Ich behandel meinen Koerper wie einen Tempel', 'Gewoehn dich dran', 'Dein Handy ist schon laecherlich dreckig', 'Kein Mensch braucht PowerPoint', 'Mit so nem Stuhl wuerde ich bei Tipico auch nur Geld verlieren', 'Ich weiss gar nicht worauf ich gerade warte... Feierabend oder so']
 
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
