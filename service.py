@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify
-from random import randint
+import random
 
 app = Flask(__name__)
-quotes = ['Ich behandel meinen Körper wie einen Tempel', 'Gewöhn dich dran', 'Dein Handy ist schon ganz schön dreckig']
+quotes = ['Ich behandel meinen Koerper wie einen Tempel', 'Gewoehn dich dran', 'Dein Handy ist schon ganz schoen dreckig']
 
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
@@ -24,7 +24,7 @@ def hello_world():
     if 'vong' in message:
         return jsonify({"color": "red", "message": "http://i.imgur.com/p0RqWqL.png", "notify": True, "message_format": "text"}),201
     if 'merlin' in message:
-        return jsonify({"color": "red", "message": quotes[randint(0,len(quotes))], "notify": True, "message_format": "text"}),201
+        return jsonify({"color": "red", "message": quotes[random.randint(0,len(quotes)-1)], "notify": True, "message_format": "text"}),201
     
     return jsonify({"color": "red", "message": "Usage: /gerg (dataman|volkskaffee|deal|kebab|vong|merlin)", "notify": False,"message_format": "text"}),201
 
