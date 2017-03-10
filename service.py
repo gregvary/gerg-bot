@@ -27,11 +27,11 @@ def hello_world():
     if 'merlin' in message:
         return jsonify({"color": "red", "message": quotes[random.randint(0,len(quotes)-1)], "notify": True, "message_format": "text"}),201
     if 'orakel' in message:
-        return jsonify({"color": "red", "message": quotes[answers.randint(0,len(answers)-1)], "notify": True, "message_format": "text"}),201
+        return jsonify({"color": "red", "message": answers[answers.randint(0,len(answers)-1)], "notify": True, "message_format": "text"}),201
     if 'face' in message:
         return jsonify({"color": "red", "message": "http://i.imgur.com/gWl6IMp.jpg", "notify": True, "message_format": "text"}),201
     
-    return jsonify({"color": "red", "message": "Usage: /gerg (dataman|volkskaffee|deal|kebab|vong|merlin|facepalm)", "notify": False,"message_format": "text"}),201
+    return jsonify({"color": "red", "message": "Usage: /gerg (dataman|volkskaffee|deal|kebab|vong|merlin|facepalm|orakel)", "notify": False,"message_format": "text"}),201
 
 
 #if __name__ == '__main__':
