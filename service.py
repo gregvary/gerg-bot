@@ -2,7 +2,8 @@ from flask import Flask, request, jsonify
 import random
 
 app = Flask(__name__)
-quotes = ['Ich behandel meinen Koerper wie einen Tempel', 'Gewoehn dich dran', 'Dein Handy ist schon laecherlich dreckig', 'Kein Mensch braucht PowerPoint', 'Mit so nem Stuhl wuerde ich bei Tipico auch nur Geld verlieren', 'Ich weiss gar nicht worauf ich gerade warte... Feierabend oder so']
+quotes = ['Ich behandel meinen Koerper wie einen Tempel', 'Gewoehn dich dran', 'Dein Handy ist schon laecherlich dreckig', 'Kein Mensch braucht PowerPoint', 'Mit so nem Stuhl wuerde ich bei Tipico auch nur Geld verlieren', 'Ich weiss gar nicht worauf ich gerade warte... Feierabend oder so','Du machst doch eh Excel','Das ist scheissegal, ich hab eh Tabletten']
+answers = ['Ja','Nein','Vielleicht','Frag Artur','Google das','Keine Ahnung man...']
 
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
@@ -25,6 +26,8 @@ def hello_world():
         return jsonify({"color": "red", "message": "http://i.imgur.com/p0RqWqL.png", "notify": True, "message_format": "text"}),201
     if 'merlin' in message:
         return jsonify({"color": "red", "message": quotes[random.randint(0,len(quotes)-1)], "notify": True, "message_format": "text"}),201
+    if 'orakel' in message:
+        return jsonify({"color": "red", "message": quotes[answers.randint(0,len(answers)-1)], "notify": True, "message_format": "text"}),201
     if 'face' in message:
         return jsonify({"color": "red", "message": "http://i.imgur.com/gWl6IMp.jpg", "notify": True, "message_format": "text"}),201
     
