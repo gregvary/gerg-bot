@@ -4,6 +4,7 @@ import random
 app = Flask(__name__)
 quotes = ['Ich behandel meinen Koerper wie einen Tempel', 'Gewoehn dich dran', 'Dein Handy ist schon laecherlich dreckig', 'Kein Mensch braucht PowerPoint', 'Mit so nem Stuhl wuerde ich bei Tipico auch nur Geld verlieren', 'Ich weiss gar nicht worauf ich gerade warte... Feierabend oder so','Du machst doch eh Excel','Das ist scheissegal, ich hab eh Tabletten', 'Das ist out of Context','So viel dazu, du arbeitest den ganzen Tag']
 answers = ['Ja','Nein','Vielleicht','Frag Artur','Google das','Keine Ahnung man...','Mir ist bewust das des Leben oft ausichtslos ist denn Lebem heist rueckwerts nicht unsonst Nebel','du bist nen Bot ich bin ein normaler Mensch','du kanns Alles nicht schaffen wenn du es auch wirglich nicht willst du darfst nuhr nicht fest daran glaubem','Wissenschafler fanden heraus dass der durchschnippliche Deutsche bei 1 Wasser tiefe vong 8 meter 20 nicht mehr stehn kann']
+memes = ['http://i.imgur.com/JEVTgfS.gifv','http://i.imgur.com/yNXAZZk.gifv]
 
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
@@ -19,7 +20,7 @@ def hello_world():
     if 'volkskaffee' in message:
         return jsonify({"color": "red", "message": "http://i.imgur.com/nwmsi10.jpg", "notify": True, "message_format": "text"}),201
     if 'deal' in message:
-        return jsonify({"color": "red", "message": "http://i.imgur.com/JEVTgfS.gifv", "notify": True, "message_format": "text"}),201
+        return jsonify({"color": "red", "message": memes[random.randint(0,len(memes)-1)], "notify": True, "message_format": "text"}),201
     if 'kebab' in message or 'kebap' in message:
         return jsonify({"color": "red", "message": "https://i.imgur.com/gPCKNum.jpg", "notify": True, "message_format": "text"}),201
     if 'vong' in message:
