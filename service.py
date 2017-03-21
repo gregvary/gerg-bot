@@ -12,7 +12,6 @@ quotes = ['Ich behandel meinen Koerper wie einen Tempel', 'Gewoehn dich dran',
           'Ich hab Angst da vergewaltigt zu werden. Ich bin leichte Beute',
           'Paracetamol ist guenstig, das ist der Sinn dahinter', 'Kannst zu RTL damit gehen',
           'Matthias kommt zu uns. Ihr koennt eure Arbeit niederlegen']
-counter = 0
 answers = ['Ja', 'Nein', 'Vielleicht', 'Frag Artur', 'Google das', 'Keine Ahnung man...',
            'Mir ist bewust das des Leben oft ausichtslos ist denn Lebem heist rueckwerts nicht unsonst Nebel',
            'du bist nen Bot ich bin ein normaler Mensch',
@@ -45,12 +44,7 @@ def hello_world():
         return jsonify({"color": "red", "message": "http://i.imgur.com/p0RqWqL.png", "notify": True,
                         "message_format": "text"}), 201
     if 'merlin' in message:
-        global counter
-        text = quotes[counter]
-        counter += 1
-        if counter > len(quotes) - 1:
-            counter = 0
-        return jsonify({"color": "red", "message": text, "notify": True, "message_format": "text"}), 201
+        return jsonify({"color": "red", "message": quotes[random.randint(0, len(quotes) - 1)], "notify": True, "message_format": "text"}), 201
     if 'orakel' in message:
         return jsonify({"color": "red", "message": answers[random.randint(0, len(answers) - 1)], "notify": True,
                         "message_format": "text"}), 201
