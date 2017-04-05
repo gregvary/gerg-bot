@@ -19,7 +19,7 @@ answers = ['Ja', 'Nein', 'Vielleicht', 'Frag Artur', 'Google das', 'Keine Ahnung
            'du kanns Alles nicht schaffen wenn du es auch wirglich nicht willst du darfst nuhr nicht fest daran glaubem',
            'Wissenschafler fanden heraus dass der durchschnippliche Deutsche bei 1 Wasser tiefe vong 8 meter 20 nicht mehr stehn kann']
 memes = ['http://i.imgur.com/JEVTgfS.gifv', 'http://i.imgur.com/yNXAZZk.gifv']
-daniel = ['Daniel arbeitet schweissfrei', 'Daniel wird nie muede', 'Daniel schlaeft nie', 'Daniel ist immer vor der Chef in Geschaeft']
+daniel = ['Daniel arbeitet schweissfrei', 'Daniel wird nie muede', 'Daniel schlaeft nie', 'Daniel ist immer vor der Chef in die Geschaeft']
 
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
