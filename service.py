@@ -58,9 +58,12 @@ def hello_world():
     if 'daily' in message:
         return jsonify({"color": "red", "message": "http://i.imgur.com/Or8tW0r.jpg", "notify": True,
                         "message_format": "text"}), 201
+    if 'culi' in message:
+        return jsonify({"color": "red", "message": "https://media3.giphy.com/media/VV5wLHAvgFxtu/giphy.gif", "notify": True,
+                        "message_format": "text"}), 201
 
     return jsonify(
-        {"color": "red", "message": "Usage: /gerg (dataman|daniel|daily|volkskaffee|deal|kebab|vong|merlin|facepalm|orakel)",
+        {"color": "red", "message": "Usage: /gerg (culi|dataman|daniel|daily|volkskaffee|deal|kebab|vong|merlin|facepalm|orakel)",
          "notify": False, "message_format": "text"}), 201
 
 # if __name__ == '__main__':
