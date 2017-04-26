@@ -21,6 +21,7 @@ answers = ['Ja', 'Nein', 'Vielleicht', 'Frag Artur', 'Google das', 'Keine Ahnung
            'Wissenschafler fanden heraus dass der durchschnippliche Deutsche bei 1 Wasser tiefe vong 8 meter 20 nicht mehr stehn kann']
 memes = ['http://i.imgur.com/JEVTgfS.gifv', 'http://i.imgur.com/yNXAZZk.gifv']
 daniel = ['Daniel arbeitet schweissfrei', 'Daniel wird nie muede', 'Daniel schlaeft nie', 'Daniel ist immer vor der Chef in die Geschaeft']
+fabi = ['Bachelor ist nur ne Trockenuebung']
 
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
@@ -52,6 +53,9 @@ def hello_world():
         return jsonify({"color": "red", "message": daniel[random.randint(0, len(daniel) - 1)], "notify": True, "message_format": "text"}), 201
     if 'orakel' in message:
         return jsonify({"color": "red", "message": answers[random.randint(0, len(answers) - 1)], "notify": True,
+                        "message_format": "text"}), 201
+    if 'fabi' in message:
+        return jsonify({"color": "red", "message": fabi[random.randint(0, len(fabi) - 1)], "notify": True,
                         "message_format": "text"}), 201
     if 'face' in message:
         return jsonify({"color": "red", "message": "http://i.imgur.com/gWl6IMp.jpg", "notify": True,
