@@ -11,7 +11,7 @@ quotes = ['Ich behandel meinen Koerper wie einen Tempel', 'Gewoehn dich dran',
           'So viel dazu, du arbeitest den ganzen Tag', 'Was ist denn los mit dir? Du bist ein besserer Mensch',
           'Ich hab Angst da vergewaltigt zu werden. Ich bin leichte Beute',
           'OK,OK,OK,OK ... CHILL!',
-          'Sind wir hier im Muggelverein?'
+          'Sind wir hier im Muggelverein?',
           'Paracetamol ist guenstig, das ist der Sinn dahinter', 'Kannst zu RTL damit gehen',
           'Matthias kommt zu uns. Ihr koennt eure Arbeit niederlegen']
 answers = ['Ja', 'Nein', 'Vielleicht', 'Frag Artur', 'Google das', 'Keine Ahnung man...',
