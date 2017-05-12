@@ -66,6 +66,9 @@ def hello_world():
     if 'culi' in message:
         return jsonify({"color": "red", "message": "https://media3.giphy.com/media/VV5wLHAvgFxtu/giphy.gif", "notify": True,
                         "message_format": "text"}), 201
+    if 'hype' in message:
+        return jsonify({"color": "red", "message": "https://www.youtube.com/watch?v=l_VFWI-3YwA", "notify": True,
+                        "message_format": "text"}), 201
 
     return jsonify(
         {"color": "red", "message": "Usage: /gerg (culi|dataman|daniel|daily|volkskaffee|deal|kebab|vong|merlin|facepalm|orakel)",
