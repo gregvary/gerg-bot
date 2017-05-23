@@ -69,6 +69,9 @@ def hello_world():
     if 'hype' in message:
         return jsonify({"color": "red", "message": "https://www.youtube.com/watch?v=l_VFWI-3YwA", "notify": True,
                         "message_format": "text"}), 201
+    if 'machine' in message:
+        return jsonify({"color": "red", "message": "http://i.imgur.com/gyEiR39.jpg", "notify": True,
+                        "message_format": "text"}), 201
 
     return jsonify(
         {"color": "red", "message": "Usage: /gerg (culi|dataman|daniel|daily|volkskaffee|deal|kebab|vong|merlin|facepalm|orakel)",
