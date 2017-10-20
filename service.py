@@ -80,7 +80,7 @@ def hello_world():
                         "message_format": "text"}), 201
 
     return jsonify(
-        {"color": "red", "message": "Usage: /gerg (culi|dataman|daniel|daily|volkskaffee|deal|kebab|vong|merlin|facepalm|orakel|machine)",
+        {"color": "red", "message": "Usage: /gerg (culi|dataman|daniel|daily|volkskaffee|deal|kebab|vong|merlin|facepalm|orakel|machine|sorn)",
          "notify": False, "message_format": "text"}), 201
 
 # if __name__ == '__main__':
