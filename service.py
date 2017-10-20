@@ -25,8 +25,8 @@ sorn = ['Gelb ist 1 sehr schoene Farbe, weil 1 Flugzeug dann aussieht wie 1 Sonn
         'Gruen ist eine Farbe, die sich in aehnlichen Bestandteilen aus den Farben Blau und Gelb zusammensetzt. Gruen ist vor allem gut fuer Tarnflugzeuge geeignet, da man sie so zwischen den Baeumen nicht sieht, wenn sie sich anschleichen.', 
         'Mit einer Lila Farbe sieht das Flugzeug sehr fancy und fast so glorious aus wie die Mitglieder von Manowar.',
         'Sie sind schweine-reich aber wollen trotzdem trve kvlt sein? Dann ist ein Flugzeug in schwarz die perfekte Wahl, um von ihren Black-Metal Kollegen akzeptiert zu werden.',
-        'Ein Flugzeug in weiß wird zwar sehr schnell dreckig, sieht mit Persil allerdings nach nur einem Waschgang aus wie neu.',
-        'Die weiße Naht besteht aus 100 Prozent Zahnseide. Haengt ihnen waehrend ihres Fluges einmal etwas zwischen den Zaehnen, koennen sie dies einfach hiermit entfernen.',
+        'Ein Flugzeug in weiss wird zwar sehr schnell dreckig, sieht mit Persil allerdings nach nur einem Waschgang aus wie neu.',
+        'Die weisse Naht besteht aus 100 Prozent Zahnseide. Haengt ihnen waehrend ihres Fluges einmal etwas zwischen den Zaehnen, koennen sie dies einfach hiermit entfernen.',
         'Die einzige Alternative zu einem Gepaecknetz ist ein Seehund, der ihr Gepaeck fuer die Dauer des Fluges auf der Nase balanciert. Den muessen sie allerdings, anders als das Gepaecknetz, mit Fisch fuettern.']
 
 @app.route('/', methods=['GET', 'POST'])
