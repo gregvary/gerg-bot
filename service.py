@@ -79,7 +79,7 @@ def hello_world():
         return jsonify({"color": "red", "message": "http://i.imgur.com/gyEiR39.jpg", "notify": True,
                         "message_format": "text"}), 201
     if 'locketh' in message:
-        return jsonify({"color": "red", "message": "I shalt bringeth cake, for i have failed to locketh mine own screen.", "notify": True,
+        return jsonify({"color": "green", "message": "I shalt bringeth cake, for i have failed to locketh mine own screen.", "notify": True,
                         "message_format": "text"}), 201
 
     return jsonify(
