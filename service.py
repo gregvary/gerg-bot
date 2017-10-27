@@ -78,6 +78,9 @@ def hello_world():
     if 'machine' in message:
         return jsonify({"color": "red", "message": "http://i.imgur.com/gyEiR39.jpg", "notify": True,
                         "message_format": "text"}), 201
+    if 'locketh' in message:
+        return jsonify({"color": "red", "message": "I shalt bringeth cake, for i have failed to locketh mine own screen.": True,
+                        "message_format": "text"}), 201
 
     return jsonify(
         {"color": "red", "message": "Usage: /gerg (culi|dataman|daniel|daily|volkskaffee|deal|kebab|vong|merlin|facepalm|orakel|machine|sorn)",
